@@ -1,5 +1,6 @@
 .aws
 data
+dev.env
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,linux,visualstudiocode,python,django
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,visualstudiocode,python,django

@@ -12,6 +12,8 @@ services:
   web:
     build: .
     command: python iot_camera_server/manage.py runserver 0.0.0.0:8000
+    # command: echo $PYTHONPATH
+    env_file: dev.env
     volumes:
       - .:/code
     ports:
