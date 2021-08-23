@@ -79,11 +79,14 @@ WSGI_APPLICATION = 'iot_camera_server.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'picsdb',
+        'USER': os.environ['PG_USERNAME'],
+        'PASSWORD': os.environ['PG_PASSWORD'],
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
-
 
 
 
