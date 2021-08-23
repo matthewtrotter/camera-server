@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'picsdb',
         'USER': os.environ['PG_USERNAME'],
         'PASSWORD': os.environ['PG_PASSWORD'],
-        'HOST': '127.0.0.1',
+        'HOST': 'remote-camera-db.clxal8fyutqa.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
